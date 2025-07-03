@@ -1,10 +1,10 @@
+@import './variables';
 :root {
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.87);
 	background-color: #fff;
-
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -25,7 +25,7 @@ html {
 	background: linear-gradient(45deg, #0c53ae, #319fe7);
 	color: #fff;
 	border-radius: 1.5rem;
-	padding: 3rem 2rem;
+	padding: 2rem;
 	margin: 6rem auto 0;
 	text-align: center;
 	&__search {
@@ -34,11 +34,19 @@ html {
 		align-items: center;
 		&-input {
 			border-radius: 2rem;
-			border: 2px solid rgba(255, 255, 255, 0.2);
+			border: 2px solid $border-color;
 			outline: 0;
-			background-color: rgba(255, 255, 255, 0.6);
+			background-color: rgba(255, 255, 255, 0.2);
 			height: 3rem;
 			padding: 0 2rem;
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			transition: 0.3s ease-in-out;
+			&:focus {
+				background-color: rgba(255, 255, 255, 0.6);
+				color: #444444;
+			}
 		}
 	}
 	&__icon {
@@ -51,25 +59,31 @@ html {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		padding: 1rem;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 1rem;
+		width: 50%;
+		gap: 1rem;
 		&-icon {
 			font-size: 3rem;
 		}
 		&-value {
 			text-align: left;
 			& p:first-child {
-				font-size: 2rem;
+				font-size: 1.5rem;
 			}
 		}
 	}
 	&__data {
-		margin-top: 5rem;
+		margin-top: 3rem;
 		display: flex;
 		flex-direction: column;
 		gap: 4rem;
 		&-bottom {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: center;
+			gap: 1rem;
 			align-items: center;
 		}
 	}
