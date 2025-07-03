@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+
+		<title>Weather App</title>
+	</head>
+	<body>
+		<div id="app"></div>
+
+		<div class="card">
+			<div class="card__search">
+				<input
+					class="card__search-input"
+					placeholder="Enter location"
+					type="text"
+					spellcheck="false"
+				/>
+			</div>
+			<div class="card__data">
+				<div class="card__data-top">
+					<i class="card__icon material-symbols-outlined">rainy</i>
+					<h3 class="card__temp">22°</h3>
+					<p class="card__location">Oslo, Sweden</p>
+				</div>
+				<div class="card__data-bottom">
+					<div class="card__detail">
+						<i class="card__detail-icon material-symbols-outlined"
+							>humidity_high</i
+						>
+						<div class="card__detail-value">
+							<p>50%</p>
+							<p>Humidity</p>
+						</div>
+					</div>
+					<div class="card__detail">
+						<i class="card__detail-icon material-symbols-outlined"
+							>humidity_high</i
+						>
+						<div class="card__detail-value">
+							<p>15 km/h</p>
+							<p>Wind Speed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
