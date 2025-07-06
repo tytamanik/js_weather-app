@@ -8,7 +8,6 @@ A minimal weather forecast app built with **Vanilla JavaScript**, **SCSS**, and 
 - 🔍 Search input for city weather
 - 🌡️ Displays temperature, feels-like, humidity, wind speed, and weather icon
 - 🎨 Styled with SCSS using BEM methodology
-- 🧼 Clean UI, mobile-friendly
 
 ## 🛠️ Tech Stack
 
